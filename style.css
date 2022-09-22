@@ -3,11 +3,11 @@
   font-style: normal;
   margin: 0;
   padding: 0;
+  font-size: calc(60% + 0.8vmin);
 }
 
 .wrapper {
   display: flex;
-  border: 1px solid red;
 
   /* min-height: 590px; */
   width: 60vw;
@@ -18,32 +18,32 @@
 
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #3c3a39;
   height: 92px;
-}
-
-.nav-upper,
-.nav-lower {
-  display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
-.nav-upper .time {
-  margin: 16px 0 0 21px;
-}
-
-.nav-upper .status {
-  margin: 17.33px 14.67px 0 0;
-}
-
-.nav-lower .logo {
+nav.logo {
   margin: 0 0 2px 12px;
 }
 
-.nav-lower .toggel {
+button {
+  background-color: #69635f;
+  background-image: url(./asset/toggel.svg);
+  color: white;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
   margin: 0 24px 4px;
+  z-index: 99129;
+}
+
+i {
+  color: white;
+  font-size: 16px;
+  padding: 10px;
 }
 
 a {
@@ -60,18 +60,21 @@ a {
 .hero-container {
   display: flex;
   flex-direction: column;
+  height: 590px;
   padding: 120px 24px 0 24px;
   background-color: #1c1a19;
   gap: 12px;
-
-  /* background-image:url("./asset/illustration-header-mobile.svg"); */
+  background-image: url("./asset/illustration-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 .one {
   font-family: 'crete round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 3.2em;
   line-height: 64px;
 
   /* or 114% */
