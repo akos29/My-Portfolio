@@ -1,0 +1,116 @@
+* {
+  font-family: 'crete round', sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: calc(60% + 0.8vmin);
+}
+
+.wrapper {
+  display: flex;
+
+  /* min-height: 590px; */
+  width: 60vw;
+
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #3c3a39;
+  height: 92px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.logo {
+  margin: 0 0 2px 12px;
+}
+
+button {
+  background-color: #69635f;
+  background-image: url(./asset/toggel.svg);
+  color: white;
+  padding: 12px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 24px 4px;
+  z-index: 99129;
+}
+
+i {
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 5px;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 590px;
+  padding: 120px 24px 0 24px;
+  background-color: #1c1a19;
+  gap: 12px;
+  background-image: url("./asset/illustration-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.one {
+  font-family: 'crete round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2em;
+  line-height: 64px;
+
+  /* or 114% */
+  letter-spacing: 0.37px;
+
+  /* theme 3 / primary 1 */
+  color: #ff6b00;
+}
+
+.two {
+  font-family: 'roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+.detail {
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+
+  /* theme 3 / neutral 11 */
+  color: #fff;
+}
+
+.social-container {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 10px;
+  padding: 3px;
+}
