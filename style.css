@@ -27,14 +27,15 @@ p {
   /* font-size: 16px; */
   line-height: 24px;
   color: #fff;
-  margin: 1em;
 }
 
 p.card {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 24px;
+  height: 87px;
 }
 
 p.feature {
@@ -45,6 +46,7 @@ p.feature {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  color: #1c1a19;
 }
 
 img {
@@ -165,7 +167,7 @@ h2.recent-work {
   display: flex;
   color: var(--main-text-color);
   padding: 24px;
-  border-bottom: green solid 2px;
+  border-bottom: #212121 solid 1px;
 }
 
 /* Flexbox for containers inside the work section container */
@@ -178,6 +180,7 @@ h2.recent-work {
 .featured-right-block {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: left;
 }
 
@@ -193,18 +196,15 @@ h3.feature {
 .feature-tags {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: row;
-  margin: 10px;
-  padding: 3px;
   color: #091e42;
 }
 
 .feature-tags li {
   display: flex;
-  flex: 1;
   padding: 10px 12px;
-  margin: 10px 12px;
   border: 1px solid #8993a4;
   background: white;
 }
@@ -240,6 +240,20 @@ h3.feature {
   background: #ff6b00;
 }
 
+.btn:hover,
+.btn1:hover {
+  font-size: 1.01em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.btn:active,
+.btn1.active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
 .action-btn {
   padding: 12px;
   color: white;
@@ -262,7 +276,6 @@ h3.feature {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  background-color: var(--main-bg-color);
 }
 
 .card-item {
@@ -287,24 +300,23 @@ h3.card {
   font-size: 2.2em;
   line-height: 44px;
   color: #fff;
+  height: 81px;
 }
 
 .tags {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: row;
-  margin: 10px;
-  padding: 3px;
   color: #fff;
 }
 
 .tags li {
   display: flex;
-  flex: 1;
   padding: 10px 12px;
-  margin: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
+  font-size: 1em;
 }
 
 /* About Myslef Section */
