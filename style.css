@@ -240,20 +240,6 @@ h3.feature {
   background: #ff6b00;
 }
 
-.btn:hover,
-.btn1:hover {
-  font-size: 1.01em;
-  color: #f55800;
-  background: #fff5e1;
-  border: 1px solid #f55800;
-}
-
-.btn:active,
-.btn1.active {
-  color: #f4f1f0;
-  background: #e05304;
-}
-
 .action-btn {
   padding: 12px;
   color: white;
@@ -269,6 +255,22 @@ h3.feature {
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+
+.btn:hover,
+.btn1:hover,
+.action-btn:hover {
+  font-size: 1.01em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.btn:active,
+.btn1.active,
+.action-btn.active {
+  color: #f4f1f0;
+  background: #e05304;
 }
 
 .card-container {
