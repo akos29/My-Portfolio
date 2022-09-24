@@ -168,7 +168,6 @@ h2.recent-work {
   border-bottom: green solid 2px;
 }
 
-
 /* Flexbox for containers inside the work section container */
 .featured-card {
   display: flex;
@@ -307,7 +306,6 @@ h3.card {
   margin: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
 }
-
 
 /* About Myslef Section */
 
