@@ -1,25 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Exo:wght@300&family=Handlee&family=Inter&family=Just+Another+Hand&family=Poppins&family=Roboto:wght@700&display=swap');
+
 * {
   font-family: 'crete round', sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
+  border: 0;
   font-size: calc(60% + 0.8vmin);
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #3c3a39;
+  --main-heading-color: #ff6b00;
+  --main-text-color: #1c1a19;
+  --secondary-heading-color: #1c1a19;
+  --secondary-text-color: #fff;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: 'poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  /* font-size: 16px; */
+  line-height: 24px;
+  color: #fff;
+}
+
+p.card {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  height: 87px;
+}
+
+p.feature {
+  font-size: 1.1em;
+
+  /* Theme 3 / Body Reguler 2 */
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1c1a19;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .wrapper {
   display: flex;
-
-  /* min-height: 590px; */
-  width: 60vw;
-
-  /* flex-wrap: wrap; */
+  width: 100vw;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  background-color: #3c3a39;
+  background-color: var(--main-bg-color);
   height: 92px;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +74,7 @@ nav.logo {
   margin: 0 0 2px 12px;
 }
 
-button {
+button.toggel {
   background-color: #69635f;
   background-image: url(./asset/toggel.svg);
   color: white;
@@ -74,7 +119,7 @@ a {
   font-family: 'crete round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.2em;
+  font-size: 3.5rem;
   line-height: 64px;
 
   /* or 114% */
@@ -93,19 +138,6 @@ a {
   color: #fff5e1;
 }
 
-.detail {
-  font-family: 'poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-
-  /* or 150% */
-
-  /* theme 3 / neutral 11 */
-  color: #fff;
-}
-
 .social-container {
   display: flex;
   list-style-type: none;
@@ -113,4 +145,268 @@ a {
   flex-direction: row;
   margin: 10px;
   padding: 3px;
+}
+
+/* Section 2 - Works */
+.work-container {
+  display: grid;
+
+  /* grid-template-columns: auto auto auto auto auto auto auto auto auto; */
+  align-items: center;
+  padding: 120px 24px 0 24px;
+  gap: 80px;
+  left: 0;
+  top: 682px;
+  width: inherit;
+}
+
+h2.recent-work {
+  font-size: 2.5em;
+  line-height: 52px;
+  align-items: center;
+  display: flex;
+  color: var(--main-text-color);
+  padding: 24px;
+  border-bottom: #212121 solid 1px;
+}
+
+/* Flexbox for containers inside the work section container */
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-right-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+h3.feature {
+  display: flex;
+  font-size: 2.1em;
+  line-height: 44px;
+  color: #091e42;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.feature-tags {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  color: #091e42;
+}
+
+.feature-tags li {
+  display: flex;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  background: white;
+}
+
+.btn {
+  display: flex;
+  padding: 12px;
+  margin-top: 24px;
+  gap: 10px;
+  color: white;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1em;
+  width: 137px;
+  height: 24px;
+  background: #ff6b00;
+}
+
+.btn1 {
+  display: flex;
+  padding: 12px;
+  gap: 10px;
+  color: white;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1em;
+  min-width: 124px;
+  height: 48px;
+  background: #ff6b00;
+}
+
+.action-btn {
+  padding: 12px;
+  color: white;
+  letter-spacing: 0.03em;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1em;
+  gap: 10px;
+  width: 100%;
+  height: 48px;
+  background: #ff6b00;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.btn:hover,
+.btn1:hover,
+.action-btn:hover {
+  font-size: 1.01em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.btn:active,
+.btn1.active,
+.action-btn.active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-item {
+  /* width: 52VW; */
+
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./asset/cardbg.svg");
+  object-fit: fill;
+}
+
+.right-block {
+  padding: 8px 21px;
+  gap: 12px;
+  font-size: 1.2em;
+  left: calc(50% - 327px / 2);
+  bottom: 62px;
+}
+
+h3.card {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2em;
+  line-height: 44px;
+  color: #fff;
+  height: 81px;
+}
+
+.tags {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  color: #fff;
+}
+
+.tags li {
+  display: flex;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  font-size: 1em;
+}
+
+/* About Myslef Section */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #1c1a19;
+  padding: 120px 24px 131px 24px;
+}
+
+.span {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-image: url(./asset/Frame.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  padding-bottom: 209px;
+  border-bottom: #fff solid 1px;
+}
+
+.bgimage {
+  display: flex;
+  justify-content: flex-end;
+
+  /* align-items: flex-end; */
+}
+
+.about-txt {
+  font-size: 1.7em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  /* font-size: 16px; */
+  line-height: 24px;
+  color: #fff;
+}
+
+.about {
+  /* margin-top: 120px; */
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.2em;
+  line-height: 88px;
+  color: #ff6b00;
+  display: flex;
+  letter-spacing: 0.37px;
+}
+
+.skills-ul {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.header-li {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+  align-items: center;
+  color: #fff;
+}
+
+.skills-ul li {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 10px;
+  padding: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+span {
+  padding: 0 12px;
 }

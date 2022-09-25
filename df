@@ -1,0 +1,55 @@
+[33mcommit dff900b04048645f229c3b8cea023070467ee0cc[m[33m ([m[1;36mHEAD -> [m[1;32mWork-about-update[m[33m)[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Sat Sep 24 00:53:54 2022 +0200
+
+    Update on syllelint error fix
+
+[33mcommit 392a7cae554d5d3add80a3c761f73090842312bd[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Sat Sep 24 00:45:27 2022 +0200
+
+    Update on syllelint error fix
+
+[33mcommit 743d145a60a3a1c122edb4d25e402ae35dfa2552[m[33m ([m[1;31morigin/work-about-features[m[33m, [m[1;32mwork-about-features[m[33m)[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Sat Sep 24 00:02:51 2022 +0200
+
+    Update on syllelint error
+
+[33mcommit 3b94e1d1b3e45d83343f3e95dfd1468e63c613be[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Fri Sep 23 23:23:26 2022 +0200
+
+    Add work and About feature
+
+[33mcommit 22992f3f31ada0cc7455c67f6e16ecf4350361cd[m[33m ([m[1;31morigin/nav-header-feature[m[33m, [m[1;32mnav-header-feature[m[33m)[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Thu Sep 22 23:27:18 2022 +0200
+
+    updated html and styling
+
+[33mcommit 42e4844cdf403c78a16c7952a3c1e73533880ea6[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Thu Sep 22 17:39:43 2022 +0200
+
+    added nav and hero
+
+[33mcommit 797e971ad26d543f457e0dcd2806cb89bb935ced[m[33m ([m[1;31morigin/setup-feature[m[33m, [m[1;32msetup-feature[m[33m)[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Wed Sep 21 15:57:01 2022 +0200
+
+    Add linter setup
+
+[33mcommit e8e45ce76c78c4f29360cafe893c494245b3f0e9[m[33m ([m[1;32madd-feature[m[33m)[m
+Author: unknown <kibrish49@gmail.com>
+Date:   Wed Sep 21 15:14:59 2022 +0200
+
+    Revert "Initial commit"
+    
+    This reverts commit aa64d10f5bd698bc55f379a1c3b8ecc2deb3abb7.
+
+[33mcommit aa64d10f5bd698bc55f379a1c3b8ecc2deb3abb7[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Kibrewossen Yitbarek <35809268+akos29@users.noreply.github.com>
+Date:   Wed Sep 21 14:30:10 2022 +0200
+
+    Initial commit
