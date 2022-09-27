@@ -410,3 +410,38 @@ h3.card {
 span {
   padding: 0 12px;
 }
+
+.contact {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 120px 24px 131px 24px;
+}
+
+.form-container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 120px 24px 131px 24px;
+  gap: 20px;
+}
+
+#message {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+  background: #FBF8F7;
+  width: 327px;
+}
+
+input {
+  border-bottom: 1px solid #DBD8D7;
+  padding-bottom: 15px;
+  width: 327px;
+}
