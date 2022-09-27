@@ -424,7 +424,7 @@ span {
   background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 73px 24px 131px 24px;
   gap: 20px;
@@ -436,73 +436,73 @@ span {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
-  background: #FBF8F7;
+  color: #3c3a39;
+  background: #fbf8f7;
   width: 327px;
 }
 
 input {
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   padding-bottom: 15px;
   width: 327px;
 }
-.paragraph1{
-font-family: 'Inter' sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-text-align: center;
-color: #172B4D;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 24px;
-width: 327px;
-height: 216px ;
-margin: 0 24px 73px;
-}
 
-.contact .btn{
+.paragraph1 {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
   display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-padding: 12px;
-gap: 10px;
-
-width: 131px;
-height: 48px;
-
-/* Theme 3 / Primary 1 */
-
-background: #FF6B00;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 327px;
+  height: 216px;
+  margin: 0 24px 73px;
 }
 
-footer{
-  border-top: 1px solid #DFE1E6;
+.contact .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
 
-} 
+  /* Theme 3 / Primary 1 */
 
-footer ul.social-container{
+  background: #ff6b00;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+}
+
+footer ul.social-container {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  height: 40px; 
+  height: 40px;
 }
-footer ul.social-container li.social{
-  color: #505F79;
 
+footer ul.social-container li.social {
+  color: #505f79;
 }
-img#shape{
+
+img#shape {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #505F79;
+  color: #505f79;
   width: min-content;
   padding: 10px;
- }
+}
