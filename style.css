@@ -439,12 +439,21 @@ span {
   color: #3c3a39;
   background: #fbf8f7;
   width: 327px;
+  padding: 30px 16px 34px;
 }
 
 input {
-  border-bottom: 1px solid #dbd8d7;
-  padding-bottom: 15px;
+  height: 18px;
   width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 30px 16px 34px;
+  border-bottom: 1px solid #dbd8d7;
+  display: flex;
+  align-items: center;
 }
 
 .paragraph1 {
@@ -481,6 +490,8 @@ input {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #dfe1e6;
 }
 
@@ -498,11 +509,13 @@ footer ul.social-container li.social {
   color: #505f79;
 }
 
-img#shape {
+footer div.bottom {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #505f79;
-  width: min-content;
-  padding: 10px;
+  justify-items: center;
+  width: 134px;
+  height: 5px;
+  margin: 2% 30%;
+  background: #0d151e;
+  border-radius: 10px;
 }
