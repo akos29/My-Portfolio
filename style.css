@@ -94,12 +94,7 @@ nav.logo {
   display: flex;
   align-items: center;
   text-align: center;
-
-  /* Theme 3 / Neutral 11 */
   color: #fff;
-
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -540,7 +535,8 @@ footer ul.social-container {
   flex-direction: row;
   align-items: center;
   height: 40px;
-  margin: ;
+
+  /* margin: ; */
 }
 
 footer ul.social-container li.social {
