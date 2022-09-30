@@ -24,8 +24,6 @@ p {
   font-family: 'poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-
-  /* font-size: 16px; */
   line-height: 24px;
   color: #fff;
 }
@@ -36,14 +34,10 @@ p.card {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  /* height: 87px; */
 }
 
 p.feature {
   font-size: 1.1em;
-
-  /* Theme 3 / Body Reguler 2 */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -58,8 +52,6 @@ img {
 
 .wrapper {
   display: flex;
-
-  /* flex-wrap: wrap; */
   flex-direction: column;
 }
 
@@ -86,8 +78,6 @@ nav.logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-
-  /* identical to box height, or 133% */
   display: flex;
   align-items: center;
   text-align: center;
@@ -137,11 +127,7 @@ a {
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 64px;
-
-  /* or 114% */
   letter-spacing: 0.37px;
-
-  /* theme 3 / primary 1 */
   color: #ff6b00;
 }
 
@@ -166,8 +152,6 @@ a {
 /* Section 2 - Works */
 .work-container {
   display: grid;
-
-  /* grid-template-columns: auto auto auto auto auto auto auto auto auto; */
   align-items: center;
   padding: 8%;
   gap: 80px;
@@ -286,8 +270,6 @@ h3.feature {
   top: 0;
   bottom: 0;
   background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(./asset/cardbg.svg);
-
-  /* width: 435px; */
 }
 
 .card-item:nth-child(2n+1) {
@@ -578,13 +560,7 @@ footer div.bottom {
   p.detail {
     font-size: 20px;
     line-height: 32px;
-
-    /* or 160% */
-
-    /* Neutrals/N20 */
     color: #f4f5f7;
-
-    /* Inside auto layout */
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -628,8 +604,6 @@ footer div.bottom {
     display: flex;
     flex-direction: row;
     gap: 24px;
-
-    /* grid-auto-rows: minmax(auto, 448px); */
   }
 
   .about-me > div {
