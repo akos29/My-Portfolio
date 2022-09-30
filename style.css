@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Exo:wght@300&family=Handlee&family=Inter&family=Just+Another+Hand&family=Poppins&family=Roboto:wght@700&display=swap');
 
+/*Code Added by Lukman Begins*/
+.text-shift:hover::placeholder{
+  transform: translate(10px, 0px);
+}
+/*Code Added by Lukman Ends*/
+
 * {
   font-family: 'crete round', sans-serif;
   font-style: normal;
