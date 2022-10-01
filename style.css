@@ -477,6 +477,10 @@ input {
   background: #ff6b00;
 }
 
+.btn:hover{
+  background: rebeccapurple;
+}
+
 footer ul.social-container {
   display: flex;
   flex-wrap: wrap;
