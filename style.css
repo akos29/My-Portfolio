@@ -14,6 +14,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+
   /* outline: 1px solid #f00 !important;
   opacity: 1 !important; */
 }
@@ -650,7 +651,7 @@ footer div.bottom {
     align-content: flex-end;
   }
 
-  .image>img{
+  .image > img {
     float: right;
   }
 
@@ -664,10 +665,10 @@ footer div.bottom {
 
   .right-block:hover,
   .right-block:focus {
-      background-color: rgb(31 38 135 / 37%);
-      width: 100%;
-      height: auto;
-      transition: transform 0.2s;
+    background-color: rgb(31 38 135 / 37%);
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
   }
 
   p.card {
