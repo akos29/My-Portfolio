@@ -15,7 +15,7 @@
 [Live Demo Link](https://livedemo.com)
 -->
 
-## Getting Started
+## To Access my portfolio
 
 **Please follow https://akos29.github.io/My-Portfolio/ to access my portfolio.**
 
