@@ -14,6 +14,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  /* outline: 1px solid #f00 !important;
+  opacity: 1 !important; */
 }
 
 :root {
@@ -323,7 +325,7 @@ h3.card {
   flex-direction: column;
   justify-content: space-around;
   background-color: #1c1a19;
-  padding: 10%;
+  padding: 10% 0 10% 10%;
 }
 
 .span {
@@ -338,13 +340,13 @@ h3.card {
   border-bottom: #fff solid 1px;
 }
 
-div.image {
+/* div.image {
   background-image: url(./asset/about-bg-m.svg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-size: contain;
   height: 238px;
-}
+} */
 
 .about-txt {
   font-family: 'Inter', sans-serif;
@@ -614,7 +616,7 @@ footer div.bottom {
   }
 
   .about-me > div {
-    width: 566px;
+    width: 60%;
   }
 
   .feature-tags li {
@@ -648,6 +650,10 @@ footer div.bottom {
     align-content: flex-end;
   }
 
+  .image>img{
+    float: right;
+  }
+
   .right-block {
     display: flex;
     flex-direction: column;
@@ -658,10 +664,10 @@ footer div.bottom {
 
   .right-block:hover,
   .right-block:focus {
-    background-color: rgb(31 38 135 / 37%);
-    width: 100%;
-    height: auto;
-    transition: transform 0.2s;
+      background-color: rgb(31 38 135 / 37%);
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s;
   }
 
   p.card {
@@ -710,13 +716,6 @@ footer div.bottom {
 
   .card-item:nth-child(11) {
     background-image: url(./asset/3.svg);
-  }
-
-  div.image {
-    background-image: url(./asset/about-bg.svg);
-    background-repeat: no-repeat;
-    background-size: 93%;
-    z-index: 9999;
   }
 
   .skills-ul {
