@@ -17,7 +17,7 @@
 
 ## To Access my portfolio
 
-**Please follow https://akos29.github.io/My-Portfolio/ to access my portfolio.**
+**Please follow [Live Demo](https://akos29.github.io/My-Portfolio/) to access my portfolio.**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -28,8 +28,6 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 
 ### Usage
-
-### Run tests
 
 ### Deployment
 
