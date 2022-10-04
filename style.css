@@ -436,6 +436,10 @@ span {
   padding: 30px 16px 34px;
 }
 
+label {
+  display: none;
+}
+
 input {
   height: 18px;
   width: 327px;
