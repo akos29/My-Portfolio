@@ -793,3 +793,9 @@ footer div.bottom {
     width: 90%;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-container {
+    background-size: 20%;
+  }
+}
