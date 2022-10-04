@@ -74,10 +74,9 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: var(--main-bg-color);
-  height: 92px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
 nav.logo {
