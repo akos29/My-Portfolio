@@ -74,10 +74,9 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: var(--main-bg-color);
-  height: 92px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
 nav.logo {
@@ -121,14 +120,10 @@ a {
 .hero-container {
   display: flex;
   flex-direction: column;
-  height: 590px;
-  padding: 120px 24px 0 24px;
+  height: 100vh;
   background-color: #1c1a19;
   gap: 12px;
-  background-image: url("./asset/illustration-header-mobile.svg");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
+
 }
 
 .one {
@@ -234,6 +229,7 @@ h3.feature {
 
 .btn,
 .action-btn {
+  display: flex;
   padding: 20px;
   margin-top: 24px;
   gap: 10px;
@@ -260,18 +256,22 @@ h3.feature {
   color: #f55800;
   background: #fff5e1;
   border: 1px solid #f55800;
+  align-items: center;
 }
 
-.btn:active,
+.btn.active,
 .action-btn.active {
   color: #f4f1f0;
   background: #e05304;
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* flex-wrap: wrap; */
+  /* margin: 0 24px 130px; */
+  grid-auto-rows: fit-content;
+  gap: 10px;
 }
 
 .card-item {
@@ -341,14 +341,6 @@ h3.card {
   border-bottom: #fff solid 1px;
 }
 
-/* div.image {
-  background-image: url(./asset/about-bg-m.svg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: contain;
-  height: 238px;
-} */
-
 .about-txt {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -411,7 +403,7 @@ span {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 120px 24px 0 24px;
+  padding: 10% 2% 3% 5%;
 }
 
 .form-container {
@@ -480,6 +472,15 @@ input {
   background: #ff6b00;
 }
 
+.contact .btn:hover {
+  font-size: 1.01em;
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  align-items: center;
+}
+
+
 footer ul.social-container {
   display: flex;
   flex-wrap: wrap;
@@ -522,26 +523,20 @@ footer div.bottom {
   }
 
   .hero-container {
-    background-image: url('./asset/hero.svg');
     display: flex;
-    background-position-x: right;
-    background-size: contain;
     margin: 0;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0 5%;
   }
 
-  .one,
-  .two,
-  .detail {
-    width: 60%;
-  }
+  .hero-container>div.image {
+    width: 100%;
+   } 
 
-  .one {
+  one {
     font-size: 72px;
-    line-height: 82px;
+    /* line-height: 82px; */
     color: #f55800;
   }
 
@@ -558,13 +553,6 @@ footer div.bottom {
     display: flex;
     flex-direction: column;
     flex: -1;
-  }
-
-  .hero2 {
-    display: flex;
-    height: auto;
-    width: 40%;
-    justify-content: flex-end;
   }
 
   p.detail {
@@ -625,11 +613,9 @@ footer div.bottom {
   }
 
   .card-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    flex-wrap: wrap;
-    margin: 0 24px 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
   }
 
   .card-item {
@@ -789,7 +775,7 @@ footer div.bottom {
 
   #message,
   input {
-    padding: 5% 10%;
+    padding: 3% 5%;
     width: 90%;
   }
 }
