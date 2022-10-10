@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <nav>
+            <nav class="header-nav">
                 <a href="#" class="logo"><svg width="101" height="44" viewBox="0 0 101 44" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -22,24 +22,26 @@
                     </svg>
                 </a>
                 <button class="toggle">
-                    <svg class="btn-open visible" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    <svg class="toggle-btn btn-open" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M11 15C11 14.4477 11.4477 14 12 14H28C28.5523 14 29 14.4477 29 15C29 15.5523 28.5523 16 28 16H12C11.4477 16 11 15.5523 11 15ZM11 20C11 19.4477 11.4477 19 12 19L28 19C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21L12 21C11.4477 21 11 20.5523 11 20ZM12 24C11.4477 24 11 24.4477 11 25C11 25.5523 11.4477 26 12 26H28C28.5523 26 29 25.5523 29 25C29 24.4477 28.5523 24 28 24H12Z"
                             fill="white" />
                     </svg>
-                    <svg class="btn-close" width="14" height="14" viewBox="0 0 14 14" fill="none"
+
+                    <svg class="toggle-btn btn-close hidden" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+                            d="M13.2929 13.2929C13.6834 12.9024 14.3166 12.9024 14.7071 13.2929L20 18.5858L25.2929 13.2929C25.6834 12.9024 26.3166 12.9024 26.7071 13.2929C27.0976 13.6834 27.0976 14.3166 26.7071 14.7071L21.4142 20L26.7071 25.2929C27.0976 25.6834 27.0976 26.3166 26.7071 26.7071C26.3166 27.0976 25.6834 27.0976 25.2929 26.7071L20 21.4142L14.7071 26.7071C14.3166 27.0976 13.6834 27.0976 13.2929 26.7071C12.9024 26.3166 12.9024 25.6834 13.2929 25.2929L18.5858 20L13.2929 14.7071C12.9024 14.3166 12.9024 13.6834 13.2929 13.2929Z"
                             fill="white" />
                     </svg>
                 </button>
+
                 <ul class="item-nav">
                     <li><a href="#">Protfolio</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">
+                    <li class="message-item"><a href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"

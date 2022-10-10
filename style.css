@@ -65,8 +65,32 @@ img {
   flex-direction: column;
 }
 
-.item-nav,
-.horizontal {
+.header-nav {
+  position: relative;
+}
+
+.item-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 10% 10% 5% 10%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+}
+
+.item-nav li {
+  border-bottom: 1px #f7f7f9 solid;
+  width: 100%;
+}
+
+.message-item {
   display: none;
 }
 
@@ -97,20 +121,36 @@ nav.logo {
 }
 
 .toggle {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
-.btn-open {
+.toggle-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .btn-open {
   display: none;
 }
 
 .btn-close {
   display: none;
+} */
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .visible {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 button.toggle {
@@ -614,8 +654,18 @@ footer div.bottom {
 
   .item-nav {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     gap: 20px;
+    padding: 0;
+    height: 80px;
+
+    position: relative;
+    width: auto;
+  }
+
+  .item-nav li {
+    border-bottom: none;
   }
 
   h2.recent-work {
