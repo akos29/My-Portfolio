@@ -29,6 +29,10 @@
   scroll-behavior: smooth;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 p {
   font-size: 1.5em;
   font-family: "poppins", sans-serif;
@@ -63,6 +67,12 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.header-sticky{
+  position: sticky;
+  left: 0;
+  top:0;
 }
 
 .header-nav {
@@ -143,14 +153,14 @@ nav.logo {
   display: none;
 } */
 
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
 .visible {
   visibility: visible;
   opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 button.toggle {
@@ -597,6 +607,10 @@ footer div.bottom {
     align-items: center;
   }
 
+  .message-item{
+    display: flex;
+  }
+
   .hero-container {
     background-image: url("./asset/hero.svg");
     display: flex;
@@ -653,6 +667,8 @@ footer div.bottom {
   }
 
   .item-nav {
+    visibility: visible;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     list-style-type: none;
