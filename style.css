@@ -29,7 +29,7 @@
   scroll-behavior: smooth;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -69,10 +69,10 @@ img {
   flex-direction: column;
 }
 
-.header-sticky{
+.header-sticky {
   position: sticky;
   left: 0;
-  top:0;
+  top: 0;
 }
 
 .header-nav {
@@ -87,7 +87,6 @@ img {
   width: 100%;
   background-color: var(--main-bg-color);
   padding: 10% 10% 5% 10%;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -138,7 +137,6 @@ nav.logo {
   position: absolute;
   top: 0;
   left: 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,7 +349,8 @@ h3.feature {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       179.35deg,
       rgba(38, 38, 38, 0) 0.85%,
       rgba(38, 38, 38, 0.9) 84%
@@ -607,7 +606,7 @@ footer div.bottom {
     align-items: center;
   }
 
-  .message-item{
+  .message-item {
     display: flex;
   }
 
@@ -675,7 +674,6 @@ footer div.bottom {
     gap: 20px;
     padding: 0;
     height: 80px;
-
     position: relative;
     width: auto;
   }
