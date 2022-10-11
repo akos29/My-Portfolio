@@ -169,6 +169,7 @@ button.toggle {
   background-color: #3c3a39;
   cursor: pointer;
   margin: 0 24px 4px;
+
   /* z-index: 99129; */
   color: white;
   font-size: 16px;
@@ -308,6 +309,7 @@ h3.feature {
 
 .btn,
 .action-btn {
+  display: flex;
   padding: 20px;
   margin-top: 24px;
   gap: 10px;
@@ -357,12 +359,98 @@ h3.feature {
   justify-content: flex-end;
   width: 100%;
   height: 435px;
-  background: linear-gradient( 179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84% ), url(./asset/cardbg.svg);
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(./asset/cardbg.svg);
 }
-/* 
-.card-item:nth-child(2n + 1) {
-  display: none;
-} */
+
+.blur-bg {
+  background-color: #979493;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  opacity: 0.5;
+  backdrop-filter: blur(10px);
+
+  /* mix-blend-mode: multiply; */
+}
+
+.project-popup {
+  /* display: none; */
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.project-popup-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid silver;
+  width: 90%;
+}
+
+.project-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+h2.popup {
+  grid-column: 1 / span 2;
+}
+
+p.popup {
+  grid-column: 2;
+  grid-row: 3 / 4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #244563;
+}
+
+img.popup {
+  width: 24px;
+  height: 24px;
+}
+
+.project-detail > img {
+  grid-column: 1;
+  grid-row: 3 / span 2;
+  width: 100%;
+  height: auto;
+}
+
+.btn-container {
+  grid-column: 2;
+  grid-row: 4 /4;
+  width: 100%;
+  display: flex;
+  gap: 7px;
+}
+
+.btn-container > .btn {
+  flex-direction: row;
+  width: fit-content;
+  margin: 0;
+}
+
+.close {
+  position: relative;
+  color: #67798e;
+  float: right;
+  font-size: 40px;
+  font-weight: 700;
+  top: -8px;
+  padding: 0;
+  margin: 0;
+}
 
 h3.card {
   font-family: "Crete Round", sans-serif;
@@ -374,7 +462,8 @@ h3.card {
   padding: 0 16px;
 }
 
-.tags {
+.tags,
+.tech {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
@@ -384,8 +473,9 @@ h3.card {
   width: 90%;
 }
 
-.tags li {
-  width: 61px;
+.tags li,
+.tech li {
+  min-width: 61px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -395,6 +485,19 @@ h3.card {
   color: #fff;
   padding: 10px 12px;
   margin: 5px;
+}
+
+.tech {
+  grid-column: 1 / span 2;
+  justify-self: start;
+  width: 50%;
+}
+
+.tech > li {
+  color: #3c3a39;
+  background-color: #ffff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 /* About Myslef Section */
@@ -422,14 +525,6 @@ h3.card {
   padding-bottom: 209px;
   border-bottom: #fff solid 1px;
 }
-
-/* div.image {
-  background-image: url(./asset/about-bg-m.svg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: contain;
-  height: 238px;
-} */
 
 .about-txt {
   font-family: "Inter", sans-serif;
@@ -745,8 +840,8 @@ footer div.bottom {
     flex-direction: row;
     gap: 14px;
     flex-wrap: wrap;
-    
   }
+
   .work-container {
     padding: 0;
   }
