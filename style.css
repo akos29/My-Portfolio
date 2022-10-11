@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Exo:wght@300&family=Handlee&family=Inter&family=Just+Another+Hand&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Exo:wght@300&family=Handlee&family=Inter&family=Just+Another+Hand&family=Poppins&family=Roboto:wght@700&display=swap");
 
 /* Code Added by Lukman Begins */
 .text-shift:hover::placeholder {
@@ -8,7 +8,7 @@
 /* Code Added by Lukman Ends */
 
 * {
-  font-family: 'crete round', sans-serif;
+  font-family: "crete round", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -29,9 +29,13 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-size: 1.5em;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -39,7 +43,7 @@ p {
 }
 
 p.card {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -48,7 +52,7 @@ p.card {
 
 p.feature {
   font-size: 1.1em;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -65,8 +69,39 @@ img {
   flex-direction: column;
 }
 
-.item-nav,
-.horizontal {
+.header-sticky {
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.header-nav {
+  position: relative;
+}
+
+.item-nav {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  padding: 10% 10% 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+}
+
+.item-nav li {
+  border-bottom: 1px #f7f7f9 solid;
+  width: 100%;
+}
+
+.message-item {
   display: none;
 }
 
@@ -82,7 +117,7 @@ nav {
 nav.logo {
   width: 77px;
   height: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -94,6 +129,38 @@ nav.logo {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.toggle {
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .btn-open {
+  display: none;
+}
+
+.btn-close {
+  display: none;
+} */
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 button.toggle {
@@ -131,7 +198,7 @@ a {
 }
 
 .one {
-  font-family: 'crete round', sans-serif;
+  font-family: "crete round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 3.5rem;
@@ -141,7 +208,7 @@ a {
 }
 
 .two {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -284,15 +351,21 @@ h3.feature {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(./asset/cardbg.svg);
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(38, 38, 38, 0) 0.85%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url(./asset/cardbg.svg);
 }
 
-.card-item:nth-child(2n+1) {
+.card-item:nth-child(2n + 1) {
   display: none;
 }
 
 h3.card {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -313,7 +386,7 @@ h3.card {
 
 .tags li {
   width: 61px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -359,7 +432,7 @@ h3.card {
 } */
 
 .about-txt {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -368,7 +441,7 @@ h3.card {
 }
 
 .about {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -435,7 +508,7 @@ span {
 }
 
 #message {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -453,7 +526,7 @@ label {
 input {
   height: 18px;
   width: 327px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -465,7 +538,7 @@ input {
 }
 
 .paragraph1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -535,8 +608,12 @@ footer div.bottom {
     align-items: center;
   }
 
+  .message-item {
+    display: flex;
+  }
+
   .hero-container {
-    background-image: url('./asset/hero.svg');
+    background-image: url("./asset/hero.svg");
     display: flex;
     background-position-x: right;
     background-size: contain;
@@ -591,9 +668,20 @@ footer div.bottom {
   }
 
   .item-nav {
+    visibility: visible;
+    opacity: 1;
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     gap: 20px;
+    padding: 0;
+    height: 80px;
+    position: relative;
+    width: auto;
+  }
+
+  .item-nav li {
+    border-bottom: none;
   }
 
   h2.recent-work {
@@ -707,7 +795,7 @@ footer div.bottom {
   .tags {
     display: flex;
     width: 90%;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -720,7 +808,7 @@ footer div.bottom {
     display: none;
   }
 
-  .card-item:nth-child(2n+1) {
+  .card-item:nth-child(2n + 1) {
     display: flex;
     flex-direction: column-reverse;
     height: 435px;
