@@ -6,7 +6,7 @@
 
 ## Built With
 
-- CSS HTML
+- CSS, HTML and Java Script 
 - Technologies used
 <!--
 
