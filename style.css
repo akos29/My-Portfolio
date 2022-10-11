@@ -67,12 +67,14 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
+  min-width: 375px;
 }
 
 .header-sticky {
   position: sticky;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 
 .header-nav {
@@ -167,7 +169,7 @@ button.toggle {
   background-color: #3c3a39;
   cursor: pointer;
   margin: 0 24px 4px;
-  z-index: 99129;
+  /* z-index: 99129; */
   color: white;
   font-size: 16px;
   padding: 8px;
@@ -344,25 +346,23 @@ h3.feature {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin: 0 0 10% 0;
 }
 
 .card-item {
   left: 0;
+  display: flex;
   right: 0;
-  top: 0;
-  bottom: 0;
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(38, 38, 38, 0) 0.85%,
-      rgba(38, 38, 38, 0.9) 84%
-    ),
-    url(./asset/cardbg.svg);
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 435px;
+  background: linear-gradient( 179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84% ), url(./asset/cardbg.svg);
 }
-
+/* 
 .card-item:nth-child(2n + 1) {
   display: none;
-}
+} */
 
 h3.card {
   font-family: "Crete Round", sans-serif;
@@ -743,14 +743,17 @@ footer div.bottom {
   .card-container {
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 14px;
     flex-wrap: wrap;
-    margin: 0 24px 130px;
+    
+  }
+  .work-container {
+    padding: 0;
   }
 
   .card-item {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-basis: 32%;
     text-align: left;
     color: inherit;
@@ -804,15 +807,16 @@ footer div.bottom {
     margin-right: 5px;
   }
 
-  .card-item:nth-child(2n) {
+  /* .card-item:nth-child(2n) {
     display: none;
-  }
+  } */
 
   .card-item:nth-child(2n + 1) {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 435px;
     align-self: flex-end;
+    justify-content: end;
   }
 
   .card-item:nth-child(1) {
