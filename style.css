@@ -283,8 +283,7 @@ h3.feature {
   display: flex;
   list-style-type: none;
   margin-right: auto;
-
-  /* column-gap: 14px; */
+  column-gap: 4px;
   flex-direction: row;
   color: #091e42;
 }
