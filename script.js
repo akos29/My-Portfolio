@@ -2,21 +2,23 @@ const btnOpen = document.querySelector('.btn-open');
 const btnClose = document.querySelector('.btn-close');
 const navContainer = document.querySelector('.item-nav');
 const cardContainer = document.querySelector('.card-container');
+const form = document.querySelector('.contact-me');
 let popup;
+
+// form.addEventListener('submit', (event) => {
+// 	event.preventDefault();
+// });
 
 function openItem() {
 	btnClose.classList.remove('hidden');
 	btnOpen.classList.add('hidden');
 	navContainer.classList.remove('hidden');
 	navContainer.classList.add('visible');
-	// popup.classList.add('visible');
 }
 function closeItem() {
 	btnOpen.classList.remove('hidden');
 	btnClose.classList.add('hidden');
 	navContainer.classList.add('hidden');
-	// popup.classList.remove('visible');
-	// popup.classList.add('hidden');
 }
 
 btnOpen.addEventListener('click', openItem);
@@ -26,39 +28,123 @@ navContainer.addEventListener('click', closeItem);
 const projects = [
 	{
 		id: 1,
-		name: 'Project 1',
-		description:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dumm text ever since the 1500s, when an unknown printer took a standard dummy text.",
+		name: ' ',
+		description: ' ',
+		technologies: [],
 		image: './asset/portfolio-snapshot.svg',
-		technologies: ['CSS', 'HTML', 'Ruby on rails'],
 		live: 'https://akos29.github.io/My-Portfolio/',
 		source: 'https://github.com/akos29/My-Portfolio',
 	},
 	{
 		id: 2,
-		name: 'Project 2',
+		name: 'Profesional Art Printing Data More',
 		description:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dumm text ever since the 1500s, when an unknown printer took a standard dummy text.",
-		technologies: ['CSS', 'Ruby on rails'],
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
 		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
 		live: 'https://akos29.github.io/My-Portfolio/',
 		source: 'https://github.com/akos29/My-Portfolio',
 	},
 	{
 		id: 3,
-		name: 'Project 9',
+		name: 'Data Dashboard Healthcare',
 		description:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dumm text ever since the 1500s, when an unknown printer took a standard dummy text.",
-		technologies: ['CSS', 'HTML', 'JS'],
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		technologies: ['html', 'bootstrap', 'Ruby'],
 		image: './asset/portfolio-snapshot.svg',
 		live: 'https://akos29.github.io/My-Portfolio/',
 		source: 'https://github.com/akos29/My-Portfolio',
 	},
 	{
 		id: 4,
-		name: 'Project 1',
-		description: 'Hello',
+		name: 'Profesional Art Printing Data More',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
 		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+	{
+		id: 5,
+		name: 'Website Protfolio',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		image: './asset/portfolio-snapshot.svg',
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+
+	{
+		id: 6,
+		name: 'Profesional Art Printing Data More',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+	{
+		id: 7,
+		name: 'Profesional Art Printing Data More',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+	{
+		id: 8,
+		name: 'Profesional Art Printing Data More',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+
+	{
+		id: 9,
+		name: 'Data Dashboard Healthcare',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		image: './asset/portfolio-snapshot.svg',
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+	{
+		id: 10,
+		name: 'Profesional Art Printing Data More',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+	{
+		id: 11,
+		name: 'Website Protfolio',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		technologies: ['html', 'bootstrap', 'Ruby'],
+		image: './asset/portfolio-snapshot.svg',
+		live: 'https://akos29.github.io/My-Portfolio/',
+		source: 'https://github.com/akos29/My-Portfolio',
+	},
+
+	{
+		id: 12,
+		name: 'Profesional Art Printing Data More',
+		description:
+			"A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+		image: './asset/portfolio-snapshot.svg',
+		technologies: ['html', 'bootstrap', 'Ruby'],
 		live: 'https://akos29.github.io/My-Portfolio/',
 		source: 'https://github.com/akos29/My-Portfolio',
 	},
@@ -67,13 +153,15 @@ const projects = [
 // function listCreate
 
 function projectCreate(project) {
+	let vis;
+	if (project.id % 2 !== 0 && project.id !== 1) vis = 'hidden';
 	let tech = '';
 	project.technologies.map(function (element, i, arr) {
 		tech += `<li> ${arr[i]}</li>`;
 	});
 
 	const projectMarkup = `<div class="card-item">
-	<div class="right-block">
+	<div class="right-block" onclick="openPopup(${project.id})">
 		<h3 class="card">${project.name}</h3>
 		<p class="card">
 			${project.description}
@@ -82,7 +170,7 @@ function projectCreate(project) {
 			${tech}
 		</ul>
 	</div>
-	<button onclick="openPopup(${project.id})" class="action-btn">See Project</button>
+	<button onclick="openPopup(${project.id})" class="action-btn ${vis}">See Project</button>
 </div>`;
 	return projectMarkup;
 }
@@ -141,15 +229,15 @@ function generatePopup(project) {
 			</p>
 			<div class="btn-container">
 				<a class="btn" href="${project.live}">
-					<img
+					See Live<img
 						class="popup"
 						src="./asset/see-live-icon.svg"
 						alt=""
-					/>See Live
+					/>
 				</a>
 				<a class="btn" href="${project.source}">
-					<img class="popup" src="./asset/source.svg" alt="" />See
-					Source
+					See
+					Source<img class="popup" src="./asset/source.svg" alt="" />
 				</a>
 			</div>
 		</div>
