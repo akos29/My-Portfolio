@@ -48,6 +48,7 @@ p.card {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding: 0 16px;
 }
 
 p.feature {
@@ -155,15 +156,6 @@ nav.logo {
   display: none;
 } */
 
-.visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
 
 button.toggle {
   background-color: #3c3a39;
@@ -232,7 +224,8 @@ a {
 .work-container {
   display: grid;
   align-items: center;
-  padding: 8%;
+  /* padding: 8%; */
+  margin: 10% 5%;
   gap: 80px;
 }
 
@@ -272,6 +265,7 @@ span.recent {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
+  gap:14px;
 }
 
 h3.feature {
@@ -311,7 +305,6 @@ h3.feature {
 .action-btn {
   display: flex;
   padding: 20px;
-  margin-top: 24px;
   gap: 10px;
   color: white;
   letter-spacing: 0.03em;
@@ -322,8 +315,8 @@ h3.feature {
   line-height: 24px;
   background: #f55800;
   width: 167px;
-  flex-direction: row-reverse;
   height: 58px;
+  cursor: pointer;
 }
 
 .action-btn {
@@ -363,6 +356,7 @@ h3.feature {
 }
 
 .blur-bg {
+  visibility: hidden;
   background-color: #979493;
   left: 0;
   top: 0;
@@ -372,12 +366,10 @@ h3.feature {
   z-index: 9;
   opacity: 0.5;
   backdrop-filter: blur(10px);
-
-  /* mix-blend-mode: multiply; */
 }
 
 .project-popup {
-  /* display: none; */
+  visibility: hidden;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -450,6 +442,7 @@ img.popup {
   top: -8px;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 
 h3.card {
@@ -471,11 +464,12 @@ h3.card {
   flex-direction: row;
   color: #fff;
   width: 90%;
+  padding: 0 16px;
 }
 
 .tags li,
 .tech li {
-  min-width: 61px;
+  min-width: fit-content;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -484,7 +478,7 @@ h3.card {
   background: hsl(0deg 0% 13% / 80%);
   color: #fff;
   padding: 10px 12px;
-  margin: 5px;
+  margin: 2px;
 }
 
 .tech {
@@ -689,6 +683,17 @@ footer div.bottom {
   border-radius: 10px;
 }
 
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
 @media (min-width: 768px) {
   .wrapper {
     flex-wrap: nowrap;
@@ -829,6 +834,9 @@ footer div.bottom {
 
   .about-me > div {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .feature-tags li {
@@ -875,6 +883,7 @@ footer div.bottom {
     align-items: flex-start;
     background-image: url(./asset/card-bg.svg);
     background-position-x: 0;
+    gap:14px;
   }
 
   .right-block:hover,
@@ -899,7 +908,6 @@ footer div.bottom {
     font-size: 15px;
     line-height: 20px;
     flex-direction: row;
-    margin-right: 5px;
   }
 
   /* .card-item:nth-child(2n) {
