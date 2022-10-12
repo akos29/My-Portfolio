@@ -450,6 +450,7 @@ img.popup {
   width: 100%;
   display: flex;
   gap: 7px;
+  align-self: end;
 }
 
 .btn-container > .btn {
