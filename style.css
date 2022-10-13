@@ -316,7 +316,7 @@ h3.feature {
   width: 167px;
   height: 58px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .action-btn {
@@ -352,8 +352,7 @@ h3.feature {
   justify-content: flex-end;
   width: 100%;
   min-height: 435px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       179.35deg,
       rgba(38, 38, 38, 0) 0.85%,
       rgba(38, 38, 38, 0.9) 84%
@@ -414,7 +413,7 @@ h3.feature {
   max-height: 48px;
   background: #f55800;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h2.popup {
@@ -672,6 +671,20 @@ input {
   margin: 0 24px 73px;
 }
 
+.form-success {
+  color: green;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid inherit;
+}
+
+.form-fail {
+  color: red;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid inherit;
+}
+
 .contact .btn {
   display: flex;
   flex-direction: row;
@@ -873,7 +886,7 @@ footer div.bottom {
   }
 
   .featured-card img {
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
     grid-row: 1/5;
   }
 
