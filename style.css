@@ -749,7 +749,7 @@ footer div.bottom {
   .btn-container {
     grid-row: 4/5;
     grid-column: 2/-1;
-    justify-content:flex-start;
+    justify-content: flex-start;
   }
 
   button.toggle,
