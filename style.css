@@ -389,10 +389,10 @@ h3.feature {
 
 .project-popup-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid silver;
-  width: 90%;
+  width: 95%;
 }
 
 .project-detail {
@@ -445,12 +445,11 @@ img.popup {
 
 .btn-container {
   grid-column: 1/-1;
-
-  /* grid-row: 4 /4; */
   width: 100%;
   display: flex;
-  gap: 7px;
+  gap: 24px;
   align-self: end;
+  justify-content: center;
 }
 
 .btn-container > .btn {
@@ -750,6 +749,7 @@ footer div.bottom {
   .btn-container {
     grid-row: 4/5;
     grid-column: 2/-1;
+    justify-content:flex-start;
   }
 
   button.toggle,
