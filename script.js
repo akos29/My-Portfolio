@@ -5,9 +5,34 @@ const cardContainer = document.querySelector('.card-container');
 const form = document.querySelector('.contact-me');
 let popup;
 
-// form.addEventListener('submit', (event) => {
-// 	event.preventDefault();
-// });
+function validateEmail(email) {
+	email = email.value.trim();
+	const emailRegex = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+
+	if (email === '') {
+		return 'Please enter your email its (required)';
+	}
+	if (!emailRegex.test(email)) {
+		return 'Please enter a correct email address format (all lower case!)';
+	}
+	return true;
+}
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const success = 'Successful';
+	const email = form.elements['email'];
+	let emailValid = validateEmail(email);
+	const msg = document.querySelector('.form-response');
+	if (emailValid !== true) {
+		msg.textContent = emailValid;
+		msg.className = 'form-fail';
+	} else {
+		form.submit();
+		form.reset();
+	}
+});
 
 function openItem() {
 	btnClose.classList.remove('hidden');
