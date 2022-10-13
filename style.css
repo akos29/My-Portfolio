@@ -48,10 +48,11 @@ p.card {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding: 0 16px;
 }
 
 p.feature {
-  font-size: 1.1em;
+  font-size: 0.8rem;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -67,12 +68,14 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
+  min-width: 375px;
 }
 
 .header-sticky {
   position: sticky;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 
 .header-nav {
@@ -153,21 +156,12 @@ nav.logo {
   display: none;
 } */
 
-.visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
 button.toggle {
   background-color: #3c3a39;
   cursor: pointer;
   margin: 0 24px 4px;
-  z-index: 99129;
+
+  /* z-index: 99129; */
   color: white;
   font-size: 16px;
   padding: 8px;
@@ -229,12 +223,14 @@ a {
 .work-container {
   display: grid;
   align-items: center;
-  padding: 8%;
+
+  /* padding: 8%; */
+  margin: 10% 5%;
   gap: 80px;
 }
 
 h2.recent-work {
-  font-size: 2.5em;
+  font-size: 1.17rem;
   line-height: 52px;
   align-items: center;
   display: flex;
@@ -269,15 +265,13 @@ span.recent {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
+  gap: 14px;
 }
 
 h3.feature {
   display: flex;
   align-items: center;
-  padding: 24px 0;
-
-  /* Title Post */
-  font-size: 40px;
+  font-size: 1.12rem;
   line-height: 52px;
   color: #091e42;
   flex: none;
@@ -288,8 +282,8 @@ h3.feature {
 .feature-tags {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin-right: auto;
+  column-gap: 4px;
   flex-direction: row;
   color: #091e42;
 }
@@ -299,27 +293,30 @@ h3.feature {
   font-size: 15px;
   line-height: 20px;
   display: flex;
-  padding: 10px 12px;
+  padding: 5px 8px;
   border: 1px solid #8993a4;
   background: white;
 }
 
 .btn,
 .action-btn {
+  display: flex;
   padding: 20px;
-  margin-top: 24px;
   gap: 10px;
   color: white;
   letter-spacing: 0.03em;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 12px;
   line-height: 24px;
+  max-height: 48px;
   background: #f55800;
   width: 167px;
-  flex-direction: row-reverse;
   height: 58px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
 }
 
 .action-btn {
@@ -344,13 +341,17 @@ h3.feature {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin: 0 0 10% 0;
 }
 
 .card-item {
   left: 0;
+  display: flex;
   right: 0;
-  top: 0;
-  bottom: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 435px;
   background:
     linear-gradient(
       179.35deg,
@@ -358,6 +359,117 @@ h3.feature {
       rgba(38, 38, 38, 0.9) 84%
     ),
     url(./asset/cardbg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blur-bg {
+  visibility: hidden;
+  background-color: #979493;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  opacity: 0.5;
+  backdrop-filter: blur(10px);
+}
+
+.project-popup {
+  visibility: hidden;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.project-popup-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid silver;
+  width: 95%;
+}
+
+.project-detail {
+  grid-template-columns: auto;
+  display: grid;
+  row-gap: 25px;
+}
+
+.project-detail .btn {
+  display: flex;
+  column-gap: 5px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  max-height: 48px;
+  background: #f55800;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+h2.popup {
+  grid-column: 1 / span 2;
+}
+
+p.popup {
+  grid-column: 1/-1;
+  grid-row: 4 / 5;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #244563;
+}
+
+img.popup {
+  width: 16px;
+  height: 16px;
+}
+
+.project-detail > img {
+  grid-column: 1/-1;
+  grid-row: 3 / 4;
+  width: 100%;
+  height: auto;
+}
+
+.btn-container {
+  grid-column: 1/-1;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-self: end;
+  justify-content: center;
+}
+
+.btn-container > .btn {
+  flex-direction: row;
+  width: fit-content;
+  margin: 0;
+}
+
+.close {
+  position: relative;
+  color: #67798e;
+  float: right;
+  font-size: 40px;
+  font-weight: 700;
+
+  /* top: -8px; */
+  padding: 0;
+  margin: 0;
+  margin-left: -8px;
+  cursor: pointer;
 }
 
 .card-item:nth-child(2n + 1) {
@@ -374,18 +486,18 @@ h3.card {
   padding: 0 16px;
 }
 
-.tags {
+.tags,
+.tech {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
-  align-items: flex-start;
+  gap: 12px;
   flex-direction: row;
   color: #fff;
-  width: 90%;
 }
 
-.tags li {
-  width: 61px;
+.tags li,
+.tech li {
+  min-width: fit-content;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -394,7 +506,20 @@ h3.card {
   background: hsl(0deg 0% 13% / 80%);
   color: #fff;
   padding: 10px 12px;
-  margin: 5px;
+
+  /* margin: 2px; */
+}
+
+.tech {
+  grid-column: 1 / span 2;
+  margin-right: auto;
+}
+
+.tech > li {
+  color: #3c3a39;
+  background-color: #ffff;
+  border: 1px solid #979493;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 /* About Myslef Section */
@@ -422,14 +547,6 @@ h3.card {
   padding-bottom: 209px;
   border-bottom: #fff solid 1px;
 }
-
-/* div.image {
-  background-image: url(./asset/about-bg-m.svg);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: contain;
-  height: 238px;
-} */
 
 .about-txt {
   font-family: "Inter", sans-serif;
@@ -594,9 +711,45 @@ footer div.bottom {
   border-radius: 10px;
 }
 
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.blur {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     flex-wrap: nowrap;
+  }
+
+  .project-detail {
+    grid-template-columns: 2fr 1.5fr;
+    gap: 25px;
+  }
+
+  .project-detail img {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+
+  p.popup {
+    grid-row: 3/4;
+    grid-column: 2/-1;
+  }
+
+  .btn-container {
+    grid-row: 4/5;
+    grid-column: 2/-1;
+    justify-content: flex-start;
   }
 
   button.toggle,
@@ -687,7 +840,7 @@ footer div.bottom {
   h2.recent-work {
     border: 0;
     flex: -1;
-    font-size: 40px;
+    font-size: 1.7rem;
     line-height: 52px;
   }
 
@@ -715,8 +868,26 @@ footer div.bottom {
 
   .featured-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 14px;
+  }
+
+  .featured-card img {
+    grid-column: 1/ span 2;
+    grid-row: 1/5;
+  }
+
+  .featured-card h3,
+  .featured-card p,
+  .featured-card .feature-tags,
+  .featured-card .btn {
+    grid-column: 3/ -1;
+    grid-row: auto;
+  }
+
+  .featured-card p,
+  .featured-card h3 {
+    padding: 0;
   }
 
   .about-me {
@@ -734,30 +905,37 @@ footer div.bottom {
 
   .about-me > div {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .feature-tags li {
-    margin-right: 24px;
+    margin-right: 14px;
   }
 
   .card-container {
     display: flex;
     flex-direction: row;
-    gap: 2px;
+    gap: 14px;
     flex-wrap: wrap;
-    margin: 0 24px 130px;
+  }
+
+  .work-container {
+    padding: 0;
   }
 
   .card-item {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-basis: 32%;
     text-align: left;
     color: inherit;
     text-decoration: none;
     border: 1px solid var(--bs-gray-dark);
     cursor: pointer;
-    margin: 5px auto;
+
+    /* margin: 5px auto; */
     transition: 0.4s linear;
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur(20px);
@@ -777,6 +955,7 @@ footer div.bottom {
     align-items: flex-start;
     background-image: url(./asset/card-bg.svg);
     background-position-x: 0;
+    gap: 14px;
   }
 
   .right-block:hover,
@@ -801,7 +980,7 @@ footer div.bottom {
     font-size: 15px;
     line-height: 20px;
     flex-direction: row;
-    margin-right: 5px;
+    margin: auto auto 10px 10px;
   }
 
   .card-item:nth-child(2n) {
@@ -810,9 +989,10 @@ footer div.bottom {
 
   .card-item:nth-child(2n + 1) {
     display: flex;
-    flex-direction: column-reverse;
-    height: 435px;
+    flex-direction: column;
+    min-height: 435px;
     align-self: flex-end;
+    justify-content: end;
   }
 
   .card-item:nth-child(1) {
