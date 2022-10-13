@@ -325,7 +325,7 @@ h3.feature {
 .btn:hover,
 .action-btn:hover {
   font-size: 14px;
-  transition: all .2s;
+  transition: all 0.2s;
   color: #fff;
   background: #fff5e1;
   border: 1px solid #f55a00a4;
@@ -627,11 +627,10 @@ span {
 #message {
   color: #3c3a39;
   background: #fbf8f7;
-	border-radius: 3px;
-	padding: 1rem 1.12rem;
-	width: 92%;
-  }
-
+  border-radius: 3px;
+  padding: 1rem 1.12rem;
+  width: 92%;
+}
 
 label {
   display: none;
@@ -645,21 +644,13 @@ input {
 }
 
 input::placeholder {
-    color: #979493;
-  }
-.error{
+  color: #979493;
+}
+
+.error {
   border-color: #dc3545;
 }
 
-input.success:focus,
-textarea.success:focus {
-  border-color: greenyellow;
-
-}
-input.success:focus,
-textarea.success:focus {
-  box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
-}
 .paragraph1 {
   font-family: "Inter", sans-serif;
   font-style: normal;
