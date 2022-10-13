@@ -2,7 +2,7 @@
 
 /* Code Added by Lukman Begins */
 .text-shift:hover::placeholder {
-  transform: translate(10px, 0);
+  transform: translate(5px, 0);
 }
 
 /* Code Added by Lukman Ends */
@@ -114,7 +114,7 @@ nav {
   background-color: var(--main-bg-color);
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
 nav.logo {
@@ -316,7 +316,6 @@ h3.feature {
   width: 167px;
   height: 58px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
 }
 
 .action-btn {
@@ -325,10 +324,11 @@ h3.feature {
 
 .btn:hover,
 .action-btn:hover {
-  font-size: 1.01em;
-  color: #f55800;
+  font-size: 14px;
+  transition: all 0.2s;
+  color: #fff;
   background: #fff5e1;
-  border: 1px solid #f55800;
+  border: 1px solid #f55a00a4;
 }
 
 .btn:active,
@@ -529,7 +529,7 @@ h3.card {
   flex-direction: column;
   justify-content: space-around;
   background-color: #1c1a19;
-  padding: 10% 0 10% 10%;
+  padding: 10% 0 10% 5%;
   background-image: url(asset/about-bg-m.svg);
   background-size: 20%;
   background-repeat: no-repeat;
@@ -611,29 +611,25 @@ span {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 120px 24px 0 24px;
+  padding: 10% 5%;
 }
 
-.form-container {
+/* .contact-me {
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 73px 24px 131px 24px;
-  gap: 20px;
-}
+  gap: 24px;
+  width: 100%;
+} */
 
 #message {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
   color: #3c3a39;
   background: #fbf8f7;
-  width: 327px;
-  padding: 30px 16px 34px;
+  border-radius: 3px;
+  padding: 1rem 1.12rem;
+  width: 92%;
 }
 
 label {
@@ -641,17 +637,18 @@ label {
 }
 
 input {
-  height: 18px;
-  width: 327px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  padding: 30px 16px 34px;
+  padding: 1rem 1.12rem;
+  width: 92%;
   border-bottom: 1px solid #dbd8d7;
-  display: flex;
-  align-items: center;
+  background-color: #fff;
+}
+
+input::placeholder {
+  color: #979493;
+}
+
+.error {
+  border-color: #dc3545;
 }
 
 .paragraph1 {
@@ -672,6 +669,20 @@ input {
   margin: 0 24px 73px;
 }
 
+.form-success {
+  color: green;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid inherit;
+}
+
+.form-fail {
+  color: red;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid inherit;
+}
+
 .contact .btn {
   display: flex;
   flex-direction: row;
@@ -679,7 +690,7 @@ input {
   justify-content: center;
   padding: 12px;
   gap: 10px;
-  width: 131px;
+  min-width: 131px;
   height: 48px;
   background: #ff6b00;
 }
@@ -874,7 +885,7 @@ footer div.bottom {
 
   .featured-card img {
     grid-column: 1/ span 2;
-    grid-row: 1/5;
+    grid-row: 1/-1;
   }
 
   .featured-card h3,
@@ -919,6 +930,7 @@ footer div.bottom {
     flex-direction: row;
     gap: 14px;
     flex-wrap: wrap;
+    margin-bottom: auto;
   }
 
   .work-container {
@@ -993,6 +1005,7 @@ footer div.bottom {
     min-height: 435px;
     align-self: flex-end;
     justify-content: end;
+    margin-right: auto;
   }
 
   .card-item:nth-child(1) {
@@ -1033,7 +1046,7 @@ footer div.bottom {
     padding: 10%;
   }
 
-  .form-container {
+  .contact-me {
     align-items: flex-start;
     gap: 14px;
   }
@@ -1082,12 +1095,6 @@ footer div.bottom {
     height: auto;
     width: 100%;
     padding: 0;
-  }
-
-  #message,
-  input {
-    padding: 5% 10%;
-    width: 90%;
   }
 }
 
