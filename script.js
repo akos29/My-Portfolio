@@ -220,13 +220,13 @@ function openPopup(id) {
 	const popup = document.querySelector('.project-popup');
 	popup.innerHTML = popupContent;
 	popup.classList.add('visible');
-	document.querySelector('.blur-bg').classList.add('blur');
+	document.querySelector('.blur-bg').classList.add('visible');
 	document.querySelector('.close').addEventListener('click', closePopup);
 }
 
 function closePopup() {
 	document.querySelector('.project-popup').classList.remove('visible');
-	document.querySelector('.blur-bg').classList.remove('blur');
+	document.querySelector('.blur-bg').classList.remove('visible');
 }
 
 function generatePopup(project) {
