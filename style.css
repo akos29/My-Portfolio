@@ -365,7 +365,7 @@ h3.feature {
 
 .blur-bg {
   visibility: hidden;
-  background-color: #979493;
+  background-color: #97949339;
   left: 0;
   top: 0;
   height: 100%;
@@ -414,7 +414,7 @@ h3.feature {
   max-height: 48px;
   background: #f55800;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h2.popup {
@@ -884,7 +884,7 @@ footer div.bottom {
   }
 
   .featured-card img {
-    grid-column: 1/ span 2;
+    grid-column: 1 / span 2;
     grid-row: 1/-1;
   }
 
