@@ -326,7 +326,7 @@ h3.feature {
 .action-btn:hover {
   font-size: 14px;
   transition: all 0.2s;
-  color: #fff;
+  color: #000;
   background: #fff5e1;
   border: 1px solid #f55a00a4;
 }
